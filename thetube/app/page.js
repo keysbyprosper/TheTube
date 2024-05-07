@@ -1,5 +1,7 @@
+import CloudUpload from "@/cloudinary/CloudUpload";
 import LoginWithGoogle from "@/firebase/LoginWithGoogle.js";
 import LogOutWithGoogle from "@/firebase/LogOutWithGoogle";
+
 
 export default function Home() {
   return (
@@ -7,6 +9,7 @@ export default function Home() {
       hello world
       <button onClick={LoginWithGoogle}>login</button>
       <button onClick={LogOutWithGoogle}>logout</button>
+      <CloudUpload/>
     </main>
   );
 }

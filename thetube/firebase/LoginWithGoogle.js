@@ -14,6 +14,7 @@ const LoginWithGoogle = () => {
       const token = credential.accessToken;
       const user = result.user;
       console.log(user);
+      console.log(user.displayName);
     })
     .catch((error) => {
       const errorCode = error.code;

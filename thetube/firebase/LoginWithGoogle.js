@@ -13,6 +13,7 @@ const LoginWithGoogle = () => {
       const credential = GoogleAuthProvider.credentialFromResult(result);
       const token = credential.accessToken;
       const user = result.user;
+      localStorage.setItem("user", JSON.stringify(user));
       console.log(user);
       console.log(user.displayName);
     })
